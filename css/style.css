@@ -425,6 +425,9 @@ align-items: center;
 width: 44px;
 height: 44px;
 border-radius: 50%;
+transition-property: background-color;
+transition-duration: 250ms;
+transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .socials-link:hover, .socials-link:focus {
@@ -453,7 +456,11 @@ height: 92px;
 border-radius: 4px;
 border: 1px solid #AFB1B8;
 border-radius: 4px;
+transition-property: background-color;
+transition-duration: 250ms;
+transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
+
 
 .regular-customers-icon{
 fill: #AFB1B8;
@@ -596,6 +603,9 @@ align-items: center;
 width: 44px;
 height: 44px;
 border-radius: 50%;
+transition-property: background-color;
+transition-duration: 250ms;
+transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .socials-link-f:hover, .socials-link-f:focus {
@@ -627,11 +637,13 @@ color: var(--main-title-color);
 cursor: pointer;
 border: 0;
 border-radius: 4px;
+transition-property: background-color;
 transition-duration: 250ms;
 transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .portfolio-item {
+transition-property: box-shadow;
 transition-duration: 250ms;
 transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -642,9 +654,11 @@ transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
 .portfolio-item:hover .overflow-description {
 transform: translateY(0%);
-box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
+.portfolio-item:hover {
+box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+}
 
 .list-btn {
 display: flex;
@@ -738,13 +752,17 @@ pointer-events: none;
 }
 
 .modal {
- position: absolute;
- top: 50%;
- left: 50%;
- width: 528px;
- height: 581px;
- transform: translate(-50%, -50%); scale(1);
- background-color: #ffffff;
+position: absolute;
+top: 50%;
+left: 50%;
+width: 528px;
+height: 581px;
+transform: translate(-50%, -50%) rotate(360deg);
+transition-duration: 1500ms;
+transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+transition-delay: 0s;
+transition-property: transform;
+background-color: #ffffff;
 box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
 border-radius: 4px;
 }
